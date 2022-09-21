@@ -1,5 +1,7 @@
+#![windows_subsystem = "windows"]
+
+use clipboard_win::{formats, set_clipboard};
 use rand::prelude::*;
-use clipboard_win::{set_clipboard, formats};
 fn main() {
     let mut rng = rand::thread_rng();
     let mut res: Vec<char> = vec![];
